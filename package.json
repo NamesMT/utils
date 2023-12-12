@@ -1,0 +1,82 @@
+{
+  "name": "@namesmt/utils",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.12.0",
+  "description": "Opinionated collection of common JavaScript / TypeScript utils on top of @antfu's opinionated collection",
+  "author": "NamesMT <dangquoctrung123@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/namesmt",
+  "homepage": "https://github.com/namesmt/utils#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namesmt/utils.git"
+  },
+  "bugs": "https://github.com/namesmt/utils/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "source": "./src/index.ts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=dev tsx src/index.ts",
+    "watch": "NODE_ENV=dev tsx watch src/index.ts",
+    "stub": "unbuild --stub",
+    "dev": "pnpm run watch",
+    "play": "pnpm run stub && pnpm run --filter playground dev",
+    "play:useBuild": "pnpm run build && pnpm run --filter playground dev",
+    "lint": "eslint .",
+    "test": "vitest",
+    "test:types": "tsc --noEmit --skipLibCheck",
+    "check": "pnpm lint && pnpm test:types && vitest run --coverage",
+    "build": "unbuild",
+    "release": "pnpm dlx changelogen@latest --release --push --publish",
+    "prepare": "simple-git-hooks",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@antfu/utils": "^0.7.7",
+    "consola": "^3.2.3",
+    "fast-equals": "^5.0.1",
+    "kontroll": "^0.1.2",
+    "p-throttle": "^6.1.0",
+    "std-env": "^3.6.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.4.5",
+    "@types/node": "^20.10.4",
+    "@unocss/eslint-plugin": "^0.58.0",
+    "@vitest/coverage-v8": "^1.0.4",
+    "eslint": "^8.55.0",
+    "lint-staged": "^15.2.0",
+    "simple-git-hooks": "^2.9.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0",
+    "vitest": "^1.0.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "hasown": "npm:@nolyfill/hasown@latest"
+    }
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
