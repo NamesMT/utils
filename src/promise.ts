@@ -15,7 +15,7 @@ export function sleep(milliseconds: number): Promise<void> {
 /**
  * Provides a clean interface to progressively add promises and call all/race on it
  */
-export class promiseList {
+export class PromiseList {
   // Pre-bind functions for less overhead on multiple calls
   #allFn = Promise.all.bind(Promise)
   #raceFn = Promise.race.bind(Promise)
