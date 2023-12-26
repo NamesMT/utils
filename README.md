@@ -1,4 +1,4 @@
-# @namesmt/utils [![NPM version](https://img.shields.io/npm/v/utils?color=a1b858&label=)](https://www.npmjs.com/package/utils)
+# @namesmt/utils [![NPM version](https://img.shields.io/npm/v/@namesmt/utils?color=a1b858&label=)](https://www.npmjs.com/package/@namesmt/utils)
 
 Opinionated collection of common JavaScript / TypeScript utils on top of [@antfu](https://github.com/antfu)'s opinionated collection
 
