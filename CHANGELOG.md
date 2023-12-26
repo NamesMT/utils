@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v0.2.0
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.1.0...v0.2.0)
+
+### 🚀 Enhancements
+
+- **base:** Adds whileWithTimeout ([7a20d4b](https://github.com/namesmt/utils/commit/7a20d4b))
+- **types:** Adds Wrapped ([75c8d44](https://github.com/namesmt/utils/commit/75c8d44))
+- **promise:** Adds `uniquePromise`, `uniquify` ([fbaa5e4](https://github.com/namesmt/utils/commit/fbaa5e4))
+- **object:** Adds `objectGet`, `objectSet`, `object_Get` ([8f2ddc3](https://github.com/namesmt/utils/commit/8f2ddc3))
+- **object:** Adds `objectGet`, `objectSet`, `object_Get` ([cfafd92](https://github.com/namesmt/utils/commit/cfafd92))
+
+### 💅 Refactors
+
+- ⚠️  File rename blob.ts > uri.ts, adds isValidUrl ([4f149bf](https://github.com/namesmt/utils/commit/4f149bf))
+- ⚠️  Rename promiseList > PromiseList (PascalCase for class) ([e83e976](https://github.com/namesmt/utils/commit/e83e976))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  File rename blob.ts > uri.ts, adds isValidUrl ([4f149bf](https://github.com/namesmt/utils/commit/4f149bf))
+- ⚠️  Rename promiseList > PromiseList (PascalCase for class) ([e83e976](https://github.com/namesmt/utils/commit/e83e976))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.1.0
 
 
