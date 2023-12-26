@@ -79,7 +79,7 @@ export function object_Get<T>(
   )
     return defaultVal
 
-  return objectDeepGet((obj as Record<string | number, unknown>)[key], splitQuery.slice(1), defaultVal)
+  return object_Get((obj as Record<string | number, unknown>)[key], splitQuery.slice(1), defaultVal)
 }
 
 export function keyBy<A extends Record<any, any>, B extends keyof A>(array: A[], iteratee: ((value: A) => PropertyKey) | B): { [K: PropertyKey]: A } {
