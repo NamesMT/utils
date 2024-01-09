@@ -10,7 +10,7 @@ export {
   noop,
 } from '@antfu/utils'
 
-export async function toBase64(v: any) {
+export function toBase64(v: any) {
   if (typeof v !== 'string')
     v = JSON.stringify(v)
 
