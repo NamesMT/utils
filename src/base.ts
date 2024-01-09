@@ -1,5 +1,7 @@
+import { Buffer } from 'node:buffer'
+
 import type { Awaitable } from '.'
-import { isFunction, sleep } from '.'
+import { isBrowser, isFunction, sleep } from '.'
 
 export {
   assert,
@@ -7,6 +9,15 @@ export {
   getTypeName,
   noop,
 } from '@antfu/utils'
+
+export async function toBase64(v: any) {
+  if (typeof v !== 'string')
+    v = JSON.stringify(v)
+
+  return isBrowser
+    ? btoa(v)
+    : Buffer.from(v).toString('base64')
+}
 
 export async function whileWithTimeout(condition: Awaitable<boolean> | (() => Awaitable<boolean>), callback: () => void | Promise<void>, timeout = 3000) {
   let timedout = false
