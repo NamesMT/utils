@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.2.1
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.2.0...v0.2.1)
+
+### 🚀 Enhancements
+
+- **base:** Add `toBase64()` ([ea5e24e](https://github.com/namesmt/utils/commit/ea5e24e))
+
+### 📖 Documentation
+
+- **README:** Fix version badge ([e5ad029](https://github.com/namesmt/utils/commit/e5ad029))
+
+### 🏡 Chore
+
+- Update deps ([4f2112e](https://github.com/namesmt/utils/commit/4f2112e))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.2.0
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.1.0...v0.2.0)
