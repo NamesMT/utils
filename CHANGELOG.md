@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.4
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.2.3...v0.2.4)
+
+### 🩹 Fixes
+
+- Ambiguous re-exports build bug ([27c77d2](https://github.com/namesmt/utils/commit/27c77d2))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.2.3
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.2.2...v0.2.3)
