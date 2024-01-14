@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.3
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.2.2...v0.2.3)
+
+### 🩹 Fixes
+
+- **toBase64:** Import 'buffer' causes error in frontend apps build ([2b81d9d](https://github.com/namesmt/utils/commit/2b81d9d))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.2.2
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.2.1...v0.2.2)
