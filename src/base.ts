@@ -1,5 +1,7 @@
-import type { Awaitable } from '.'
-import { isFunction, sleep, stringToBase64 } from '.'
+import type { Awaitable } from './types'
+import { isFunction } from './is'
+import { sleep } from './promise'
+import { stringToBase64 } from './vendor'
 
 export {
   assert,

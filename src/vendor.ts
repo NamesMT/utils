@@ -13,6 +13,26 @@ export {
   createCustomEqual,
 } from 'fast-equals'
 
-export * from 'kontroll'
+export {
+  clear,
+  countdown,
+  debounce,
+  throttle,
+} from 'kontroll'
 
-export * from 'uint8array-extras'
+export {
+  areUint8ArraysEqual,
+  assertUint8Array,
+  base64ToString,
+  base64ToUint8Array,
+  compareUint8Arrays,
+  concatUint8Arrays,
+  hexToUint8Array,
+  isUint8Array,
+  stringToBase64,
+  stringToUint8Array,
+  toUint8Array,
+  uint8ArrayToBase64,
+  uint8ArrayToHex,
+  uint8ArrayToString,
+} from 'uint8array-extras'
