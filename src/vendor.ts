@@ -13,9 +13,6 @@ export {
   createCustomEqual,
 } from 'fast-equals'
 
-export {
-  clear,
-  countdown,
-  debounce,
-  throttle,
-} from 'kontroll'
+export * from 'kontroll'
+
+export * from 'uint8array-extras'
