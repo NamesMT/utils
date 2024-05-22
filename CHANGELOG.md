@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.2.5
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.2.4...v0.2.5)
+
+### 🚀 Enhancements
+
+- Add `escapeRegex`, `variablePrefix` ([0404855](https://github.com/namesmt/utils/commit/0404855))
+
+### 🏡 Chore
+
+- Update deps ([0fa2e75](https://github.com/namesmt/utils/commit/0fa2e75))
+
+### 🎨 Styles
+
+- Lint:fix ([fe296ac](https://github.com/namesmt/utils/commit/fe296ac))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.2.4
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.2.3...v0.2.4)
