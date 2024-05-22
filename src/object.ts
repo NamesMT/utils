@@ -73,9 +73,9 @@ export function object_Get<T>(
 
   if (
     typeof obj !== 'object'
-      || obj === null
-      || !(key in obj)
-      || (obj as Record<string | number, unknown>)[key] === undefined
+    || obj === null
+    || !(key in obj)
+    || (obj as Record<string | number, unknown>)[key] === undefined
   )
     return defaultVal
 
