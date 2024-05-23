@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.6
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.2.5...v0.2.6)
+
+### 🏡 Chore
+
+- Align with base `starter-ts` ([3f0d84a](https://github.com/namesmt/utils/commit/3f0d84a))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.2.5
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.2.4...v0.2.5)
