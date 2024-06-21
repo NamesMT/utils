@@ -1,20 +1,12 @@
-import type { Awaitable } from './types'
-import { isFunction } from './is'
-import { sleep } from './promise'
-import { stringToBase64 } from './vendor'
-
-export {
-  assert,
-  toString,
-  getTypeName,
-  noop,
-} from '@antfu/utils'
+import type { Awaitable } from '@antfu/utils'
+import { isBrowser, isFunction, sleep } from '@antfu/utils'
 
 export function toBase64(v: any) {
   if (typeof v !== 'string')
     v = JSON.stringify(v)
 
-  return stringToBase64(v)
+  // eslint-disable-next-line node/prefer-global/buffer
+  return isBrowser ? btoa(v) : globalThis.Buffer.from(v).toString('base64')
 }
 
 export async function whileWithTimeout(condition: Awaitable<boolean> | (() => Awaitable<boolean>), callback: () => void | Promise<void>, timeout = 3000) {

@@ -1,5 +1,3 @@
-export const timestamp = () => +Date.now()
-
 export const unix = () => Math.floor(+Date.now() / 1000)
 
 /**

@@ -1,15 +1,3 @@
-export {
-  objectMap,
-  isKeyOf,
-  objectKeys,
-  objectEntries,
-  deepMerge,
-  deepMergeWithArray,
-  objectPick,
-  clearUndefined,
-  hasOwnProperty,
-} from '@antfu/utils'
-
 /**
  * Simple no recursive object get by path with `create` option
  */
@@ -76,8 +64,9 @@ export function object_Get<T>(
     || obj === null
     || !(key in obj)
     || (obj as Record<string | number, unknown>)[key] === undefined
-  )
+  ) {
     return defaultVal
+  }
 
   return object_Get((obj as Record<string | number, unknown>)[key], splitQuery.slice(1), defaultVal)
 }

@@ -27,7 +27,7 @@ pnpm install @namesmt/utils
 ### Import:
 ```ts
 // ESM
-import { debounce, logger } from '@namesmt/utils'
+import { logger, objectGet } from '@namesmt/utils'
 ```
 
 ## Roadmap

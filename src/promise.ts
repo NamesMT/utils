@@ -1,19 +1,5 @@
 import type { FnWithArgs, Wrapped } from './types'
 
-export type {
-  SingletonPromiseReturn,
-  ControlledPromise,
-} from '@antfu/utils'
-export {
-  createSingletonPromise,
-  createPromiseLock,
-  createControlledPromise,
-} from '@antfu/utils'
-
-export function sleep(milliseconds: number): Promise<void> {
-  return new Promise((resolve) => { setTimeout(resolve, milliseconds) })
-}
-
 /**
  * Provides a clean interface to progressively add promises and call all/race on it
  */
