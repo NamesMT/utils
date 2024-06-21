@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.0
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.2.6...v0.3.0)
+
+### 💅 Refactors
+
+- ⚠️  Restructure the purpose of the package ([026938e](https://github.com/namesmt/utils/commit/026938e))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Restructure the purpose of the package ([026938e](https://github.com/namesmt/utils/commit/026938e))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.2.6
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.2.5...v0.2.6)
