@@ -57,3 +57,30 @@ export function variablePrefix<I extends string | any[] | Record<string, any>, P
 
   throw new Error(`variable type not supported: ${typeof variable}`)
 }
+
+export class DetailedError extends Error {
+  /**
+   * Additional `message` that will be logged AND returned to client
+   */
+  public detail?: any
+  /**
+   * Additional `code` that will be logged AND returned to client
+   */
+  public code?: any
+  /**
+   * Additional value that will be logged AND NOT returned to client
+   */
+  public log?: any
+  /**
+   * Optionally set the status code to return, in a web server context
+   */
+  public statusCode?: any
+
+  constructor(message: string, options: { detail?: any, code?: any, statusCode?: number, log?: any } = {}) {
+    super(message)
+    this.log = options.log
+    this.detail = options.detail
+    this.code = options.code
+    this.statusCode = options.statusCode
+  }
+}
