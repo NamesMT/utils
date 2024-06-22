@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.3.1
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.3.0...v0.3.1)
+
+### 🚀 Enhancements
+
+- **base:** Add `DetailedError` class ([483c3ca](https://github.com/namesmt/utils/commit/483c3ca))
+
+### 💅 Refactors
+
+- **arrayFromIndexes:** Use `map` instead of loop ([30953df](https://github.com/namesmt/utils/commit/30953df))
+
+### 🏡 Chore
+
+- Remove `unocss` from eslint config ([95f3e12](https://github.com/namesmt/utils/commit/95f3e12))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.3.0
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.2.6...v0.3.0)
