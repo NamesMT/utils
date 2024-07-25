@@ -1,6 +1,9 @@
 import type { Awaitable } from '@antfu/utils'
 import { isBrowser, isFunction, sleep } from '@antfu/utils'
 
+/**
+ * @deprecated use `uint8array-extras` instead
+ */
 export function toBase64(v: any) {
   if (typeof v !== 'string')
     v = JSON.stringify(v)
