@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.5.0
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.4.1...v0.5.0)
+
+### 💅 Refactors
+
+- ⚠️  Remove `logger` from package ([e28e48e](https://github.com/namesmt/utils/commit/e28e48e))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Remove `logger` from package ([e28e48e](https://github.com/namesmt/utils/commit/e28e48e))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.4.1
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.4.0...v0.4.1)
