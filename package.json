@@ -48,9 +48,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@antfu/utils": "^0.7.10",
-    "consola": "^3.2.3",
-    "std-env": "^3.7.0"
+    "@antfu/utils": "^0.7.10"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.23.2",

@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
-import { createLogger, debounce } from '@namesmt/utils'
+import { debounce } from '@namesmt/utils'
 
 export default defineConfig({
   plugins: [
@@ -8,6 +8,5 @@ export default defineConfig({
   ],
 })
 
-const logger = createLogger()
-
-const _clearer = debounce(500, () => logger.info('halo'))
+// eslint-disable-next-line no-console
+const _debounced = debounce(500, () => console.info('halo'))
