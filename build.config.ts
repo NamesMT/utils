@@ -5,6 +5,7 @@ export default defineBuildConfig({
   entries: [
     // normal bundles
     'src/index',
+    'src/logger/index',
 
     // file-to-file (please use .mts for all of your files), currently mkdist uncontrollably generates .d.ts and .d.mts based on the original extension: .ts or .mts
     // {
@@ -16,6 +17,7 @@ export default defineBuildConfig({
   declaration: 'node16',
   clean: true,
   rollup: {
+    inlineDependencies: true,
     esbuild: {
       target: 'esnext',
     },

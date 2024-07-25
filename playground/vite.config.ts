@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
-import { createLogger, debounce } from '@namesmt/utils'
+import { debounce } from '@namesmt/utils'
+import { createLoggerConsola } from '@namesmt/utils/logger'
 
 export default defineConfig({
   plugins: [
@@ -8,6 +9,7 @@ export default defineConfig({
   ],
 })
 
-const logger = createLogger()
+const logger = createLoggerConsola()
 
-const _clearer = debounce(500, () => logger.info('halo'))
+const logIt = debounce(500, () => logger.info('halo'))
+logIt()

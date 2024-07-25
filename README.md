@@ -27,7 +27,7 @@ pnpm install @namesmt/utils
 ### Import:
 ```ts
 // ESM
-import { createLogger, objectGet } from '@namesmt/utils'
+import { objectGet } from '@namesmt/utils'
 ```
 
 ## Roadmap
