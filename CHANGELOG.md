@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.4.0
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.3.1...v0.4.0)
+
+### 💅 Refactors
+
+- **logger:** ⚠️  Exports `createLogger` instead of pre-created `logger` ([4ddafa3](https://github.com/namesmt/utils/commit/4ddafa3))
+
+#### ⚠️ Breaking Changes
+
+- **logger:** ⚠️  Exports `createLogger` instead of pre-created `logger` ([4ddafa3](https://github.com/namesmt/utils/commit/4ddafa3))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.3.1
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.3.0...v0.3.1)
