@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.4.1
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.4.0...v0.4.1)
+
+### 🏡 Chore
+
+- Update deps, lockfile ([9c6523a](https://github.com/namesmt/utils/commit/9c6523a))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.4.0
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.3.1...v0.4.0)
