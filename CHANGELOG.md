@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.5.2
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.1...v0.5.2)
+
+### 🩹 Fixes
+
+- **objectSet:** Should not mutate path array ([741bb38](https://github.com/namesmt/utils/commit/741bb38))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.5.1
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.0...v0.5.1)
