@@ -30,14 +30,11 @@ export function objectSet<I = any, R = I>(obj: I, path: string | string[], value
 
   path = Array.isArray(path) ? path : path.split('.')
 
-  // Remove last index and assign to _path
-  const _path = path.splice(-1)[0]
-
   // Get object omit the last index
-  const _obj = objectGet(obj, path, create)
+  const _obj = objectGet(obj, path.slice(0, -1), create)
 
   // Set value for last index
-  _obj[_path] = value
+  _obj[path.slice(-1)[0]] = value
 
   return obj as any as R
 }
