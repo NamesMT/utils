@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.5.1
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.0...v0.5.1)
+
+### 🚀 Enhancements
+
+- Add `toUnix` ([f5fc639](https://github.com/namesmt/utils/commit/f5fc639))
+
+### 🏡 Chore
+
+- Deprecate `toBase64` ([094e88f](https://github.com/namesmt/utils/commit/094e88f))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.5.0
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.4.1...v0.5.0)
