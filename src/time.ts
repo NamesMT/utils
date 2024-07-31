@@ -1,4 +1,6 @@
-export const unix = () => Math.floor(+Date.now() / 1000)
+export const toUnix = (dateMs: number) => Math.floor(dateMs / 1000)
+
+export const unix = () => toUnix(Date.now())
 
 /**
  * Simple function to convert seconds into HH:MM:SS
