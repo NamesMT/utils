@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.5.3
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.2...v0.5.3)
+
+### 🚀 Enhancements
+
+- **asyncToBlob:** Better types and asserts truthy blob ([c637e91](https://github.com/namesmt/utils/commit/c637e91))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.5.2
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.1...v0.5.2)
