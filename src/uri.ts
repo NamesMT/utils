@@ -1,5 +1,10 @@
-export function asyncToBlob(canvasEl: HTMLCanvasElement, type?: string, quality?: number) {
-  return new Promise(resolve => canvasEl.toBlob(resolve, type, quality))
+export function asyncToBlob(canvasEl: HTMLCanvasElement, type?: string, quality?: number): Promise<Blob> {
+  return new Promise(resolve => canvasEl.toBlob((blob) => {
+    if (!blob)
+      throw new Error('Failed to convert canvas to blob')
+
+    resolve(blob)
+  }, type, quality))
 }
 export function blobToDataURI(blob: Blob) {
   return URL.createObjectURL(blob)
