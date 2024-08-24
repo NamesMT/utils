@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.5.4
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.3...v0.5.4)
+
+### 🏡 Chore
+
+- Housekeeping ([426f1da](https://github.com/namesmt/utils/commit/426f1da))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.5.3
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.2...v0.5.3)
