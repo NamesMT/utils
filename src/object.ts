@@ -67,16 +67,3 @@ export function object_Get<T>(
 
   return object_Get((obj as Record<string | number, unknown>)[key], splitQuery.slice(1), defaultVal)
 }
-
-export function keyBy<A extends Record<any, any>, B extends keyof A>(array: A[], iteratee: ((value: A) => PropertyKey) | B): { [K: PropertyKey]: A } {
-  const acc: any = {}
-  for (let i = 0; i < array.length; ++i) {
-    acc[
-      (typeof iteratee === 'function')
-        ? iteratee(array[i])
-        : array[i][iteratee]
-    ] = array[i]
-  }
-
-  return acc
-}
