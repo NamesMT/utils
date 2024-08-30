@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.5.5
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.4...v0.5.5)
+
+### 💅 Refactors
+
+- **keyBy:** ⚠️  Improve types, move from `object` to `array`, added `KeyedBy` ([d362b5c](https://github.com/namesmt/utils/commit/d362b5c))
+
+#### ⚠️ Breaking Changes
+
+- **keyBy:** ⚠️  Improve types, move from `object` to `array`, added `KeyedBy` ([d362b5c](https://github.com/namesmt/utils/commit/d362b5c))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.5.4
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.3...v0.5.4)
