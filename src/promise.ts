@@ -33,7 +33,7 @@ export class PromiseList {
   }
 }
 
-export async function getPromiseState(promise: Promise<any>) {
+export async function getPromiseState<T>(promise: Promise<T>) {
   const pending = {
     state: 'pending',
   }
@@ -48,7 +48,7 @@ export async function getPromiseState(promise: Promise<any>) {
       }
     },
     reason => ({ state: 'rejected', reason }),
-  )
+  ) as Promise<{ state: 'pending' } | { state: 'resolved', value: T } | { state: 'rejected', reason: any }>
 }
 
 const _uniquePromiseStore = {} as { [key: string]: Promise<any> }
@@ -59,14 +59,13 @@ const _uniquePromiseStore = {} as { [key: string]: Promise<any> }
  * Similar to `createSingletonPromise` but tracked by key instead of a wrapper scope
  * 
  * @param key - defaults to function name + args
- * @param promiseCallback 
- * @returns 
+ * @param promiseCallback - a function that will return a promise
  */
-export function uniquePromise(key: string, promiseCallback: FnWithArgs<Promise<any>>) {
+export function uniquePromise<T extends Promise<unknown>>(key: string, promiseCallback: FnWithArgs<T>): T {
   if (typeof _uniquePromiseStore[key] !== 'undefined')
-    return _uniquePromiseStore[key]
+    return _uniquePromiseStore[key] as T
 
-  return _uniquePromiseStore[key] = promiseCallback().finally(() => { delete _uniquePromiseStore[key] })
+  return _uniquePromiseStore[key] = promiseCallback().finally(() => { delete _uniquePromiseStore[key] }) as T
 }
 type Uniquified<T> = Wrapped<T>
 /**
