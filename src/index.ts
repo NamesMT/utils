@@ -2,6 +2,7 @@ export * from '@antfu/utils'
 
 export * from './array'
 export * from './base'
+export * from './equal'
 export * from './object'
 export * from './promise'
 export * from './time'
