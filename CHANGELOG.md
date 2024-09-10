@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.5.6
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.5...v0.5.6)
+
+### 🚀 Enhancements
+
+- Add `dequal` re-export ([3a4b5f3](https://github.com/namesmt/utils/commit/3a4b5f3))
+
+### 🌊 Types
+
+- **promise:** Improve return types ([2e30cb0](https://github.com/namesmt/utils/commit/2e30cb0))
+
+### 🏡 Chore
+
+- Update deps, apply lint fixes ([d3fa277](https://github.com/namesmt/utils/commit/d3fa277))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.5.5
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.4...v0.5.5)
