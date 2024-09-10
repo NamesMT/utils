@@ -1,6 +1,6 @@
+import { debounce } from '@namesmt/utils'
 import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
-import { debounce } from '@namesmt/utils'
 
 export default defineConfig({
   plugins: [

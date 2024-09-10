@@ -76,6 +76,7 @@ type Uniquified<T> = Wrapped<T>
  * 
  * @param key - Additionally set key prefix in case we have other functions with same name.
  */
+// eslint-disable-next-line ts/no-unsafe-function-type
 export function uniquify<T extends Function>(fn: T, key?: string): Uniquified<T> {
   const newFn = async function (this: any, ...args: any[]) {
     return uniquePromise(key + fn.name + JSON.stringify(args), () => fn.apply(this, args))

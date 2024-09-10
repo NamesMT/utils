@@ -1,5 +1,5 @@
-import type { Awaitable } from '@antfu/utils'
 import { isBrowser, isFunction, sleep } from '@antfu/utils'
+import type { Awaitable } from '@antfu/utils'
 
 /**
  * @deprecated use `uint8array-extras` instead

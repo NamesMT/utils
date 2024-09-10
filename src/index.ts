@@ -1,5 +1,3 @@
-export * from '@antfu/utils'
-
 export * from './array'
 export * from './base'
 export * from './equal'
@@ -8,3 +6,5 @@ export * from './promise'
 export * from './time'
 export * from './types'
 export * from './uri'
+
+export * from '@antfu/utils'
