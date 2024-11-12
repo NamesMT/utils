@@ -1,4 +1,4 @@
-import { debounce } from '@namesmt/utils'
+import { variablePrefix } from '@namesmt/utils'
 import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
 
@@ -8,5 +8,5 @@ export default defineConfig({
   ],
 })
 
-// eslint-disable-next-line no-console
-const _debounced = debounce(500, () => console.info('halo'))
+const _prefixedArr = variablePrefix(['str'], 'prefix-')
+const _prefixedObj = variablePrefix({ str: 'str' }, 'prefix-')
