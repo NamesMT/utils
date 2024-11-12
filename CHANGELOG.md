@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.5.7
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.6...v0.5.7)
+
+### 🚀 Enhancements
+
+- Add `string` module: `replaceMap()` ([15ff95c](https://github.com/namesmt/utils/commit/15ff95c))
+
+### 🏡 Chore
+
+- Update deps ([1a7a0c2](https://github.com/namesmt/utils/commit/1a7a0c2))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.5.6
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.5...v0.5.6)
