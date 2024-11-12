@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.5.8
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.7...v0.5.8)
+
+### 🚀 Enhancements
+
+- **array:** Add `removeItemsByIndexes()` ([2e1784a](https://github.com/namesmt/utils/commit/2e1784a))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.5.7
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.6...v0.5.7)
