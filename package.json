@@ -1,8 +1,8 @@
 {
   "name": "@namesmt/utils",
   "type": "module",
-  "version": "0.5.8",
-  "packageManager": "pnpm@9.12.3",
+  "version": "0.5.9",
+  "packageManager": "pnpm@9.13.2",
   "description": "Opinionated collection of common JavaScript / TypeScript utils on top of @antfu's opinionated collection",
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
@@ -52,16 +52,16 @@
     "dequal": "^2.0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.8.0",
-    "@types/node": "^20.17.6",
-    "@vitest/coverage-v8": "^2.1.4",
-    "eslint": "^9.14.0",
+    "@antfu/eslint-config": "^3.9.1",
+    "@types/node": "^22.9.0",
+    "@vitest/coverage-v8": "^2.1.5",
+    "eslint": "^9.15.0",
     "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
     "unbuild": "^2.0.0",
-    "vitest": "^2.1.4"
+    "vitest": "^2.1.5"
   },
   "pnpm": {
     "overrides": {

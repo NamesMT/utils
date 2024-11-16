@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v0.5.9
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.8...v0.5.9)
+
 ## v0.5.8
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.7...v0.5.8)
