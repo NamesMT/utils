@@ -60,7 +60,7 @@
     "simple-git-hooks": "^2.11.1",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
-    "unbuild": "^2.0.0",
+    "unbuild": "^3.5.0",
     "vitest": "^2.1.5"
   },
   "pnpm": {
