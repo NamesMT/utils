@@ -2,7 +2,7 @@
   "name": "@namesmt/utils",
   "type": "module",
   "version": "0.5.9",
-  "packageManager": "pnpm@9.13.2",
+  "packageManager": "pnpm@9.15.9",
   "description": "Opinionated collection of common JavaScript / TypeScript utils on top of @antfu's opinionated collection",
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
@@ -52,20 +52,20 @@
     "dequal": "^2.0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.9.1",
-    "@types/node": "^22.9.0",
-    "@vitest/coverage-v8": "^2.1.5",
-    "eslint": "^9.15.0",
-    "lint-staged": "^15.2.10",
-    "simple-git-hooks": "^2.11.1",
-    "tsx": "^4.19.2",
-    "typescript": "^5.6.3",
+    "@antfu/eslint-config": "^3.16.0",
+    "@types/node": "^22.14.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "eslint": "^9.24.0",
+    "lint-staged": "^15.5.0",
+    "simple-git-hooks": "^2.12.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
     "unbuild": "^2.0.0",
-    "vitest": "^2.1.5"
+    "vitest": "^2.1.9"
   },
   "pnpm": {
     "overrides": {
-      "is-core-module": "npm:@nolyfill/is-core-module@^1"
+      "is-core-module": "npm:@nolyfill/is-core-module@^1.0.39"
     }
   },
   "simple-git-hooks": {
