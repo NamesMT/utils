@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.5.10
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.9...v0.5.10)
+
+### 🏡 Chore
+
+- Commit lockfile ([3fb5e06](https://github.com/namesmt/utils/commit/3fb5e06))
+- Housekeeping (align with starter-ts) ([f6c5ceb](https://github.com/namesmt/utils/commit/f6c5ceb))
+- Update deps ([8d8c549](https://github.com/namesmt/utils/commit/8d8c549))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.9
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.8...v0.5.9)
