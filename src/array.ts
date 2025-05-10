@@ -30,7 +30,7 @@ type KeyedByInternal<T, S extends PropertyKey> = S extends keyof T ? {
   [K in T[S] as Extends<K, PropertyKey>]: Extends<T, Record<S, K>>
 } : never
 
-export type KeyedBy<A, S extends PropertyKey> = A extends Array<infer T>
+export type KeyedBy<A, S extends PropertyKey> = A extends ReadonlyArray<infer T>
   ? KeyedByInternal<T, S>
   : never
 
