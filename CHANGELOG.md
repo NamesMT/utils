@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.5.12
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.11...v0.5.12)
+
+### 🔥 Performance
+
+- Only create `mirror` if needed ([ec7f8da](https://github.com/namesmt/utils/commit/ec7f8da))
+
+### 🏡 Chore
+
+- `pnpm approve-builds` ([30d7ec5](https://github.com/namesmt/utils/commit/30d7ec5))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.11
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.10...v0.5.11)
