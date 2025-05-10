@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.5.13
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.12...v0.5.13)
+
+### 🌊 Types
+
+- **keyBy:** Should works with `ReadonlyArray`s ([f99b039](https://github.com/namesmt/utils/commit/f99b039))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.12
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.11...v0.5.12)
