@@ -12,16 +12,16 @@ export function replaceByMap(str: string, map: Record<string, string>, recursive
     for (const [find, replace] of entries) {
       if (builtRegExp[find] === undefined)
         builtRegExp[find] = new RegExp(escapeRegex(find), 'g')
-      
+
       const findRE = builtRegExp[find]
       str = str.replace(findRE, replace)
     }
   }
-  
-  let mirror = str
+
   doReplaces()
 
   if (recursive) {
+    let mirror = str
     while (mirror !== str) {
       mirror = str
       doReplaces()
@@ -48,10 +48,10 @@ export function replaceByArray(str: string, replaces: ReadonlyArray<[string | Re
 
     if (builtRegExp[find] === undefined)
       builtRegExp[find] = new RegExp(escapeRegex(find), 'g')
-    
+
     return builtRegExp[find]
   }
-  
+
   const doReplaces = () => {
     for (const [find, replace] of replaces) {
       const findRE = getFindRE(find)
@@ -59,10 +59,10 @@ export function replaceByArray(str: string, replaces: ReadonlyArray<[string | Re
     }
   }
 
-  let mirror = str
   doReplaces()
 
   if (recursive) {
+    let mirror = str
     while (mirror !== str) {
       mirror = str
       doReplaces()
