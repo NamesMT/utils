@@ -37,7 +37,7 @@ export type KeyedBy<A, S extends PropertyKey> = A extends Array<infer T>
 /**
  * Transform an array into an object, keyed by the iteratee
  */
-export function keyBy<A extends Array<Record<PropertyKey, any>>, B extends keyof A[number], I extends B | ((v: A[number]) => PropertyKey)>(array: A, iteratee: I): I extends B ? KeyedBy<A, I> : { [key: PropertyKey]: A[number] } {
+export function keyBy<A extends ReadonlyArray<Record<PropertyKey, any>>, B extends keyof A[number], I extends B | ((v: A[number]) => PropertyKey)>(array: A, iteratee: I): I extends B ? KeyedBy<A, I> : { [key: PropertyKey]: A[number] } {
   const acc: any = {}
   for (let i = 0; i < array.length; ++i) {
     acc[
