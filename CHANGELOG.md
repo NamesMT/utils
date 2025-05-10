@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.5.11
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.10...v0.5.11)
+
+### 🚀 Enhancements
+
+- **replaceMap:** Rename to `replaceByMap`, add `recursive` arg ([9589aa8](https://github.com/namesmt/utils/commit/9589aa8))
+- Add `replaceByArray` fn ([653ac1c](https://github.com/namesmt/utils/commit/653ac1c))
+
+### 🌊 Types
+
+- **keyBy:** Should works with `ReadonlyArray`s ([488421a](https://github.com/namesmt/utils/commit/488421a))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.10
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.9...v0.5.10)
