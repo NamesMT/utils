@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.5.14
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.13...v0.5.14)
+
+### 🌊 Types
+
+- **variablePrefix:** Support for readonly arrays ([aded43c](https://github.com/namesmt/utils/commit/aded43c))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.13
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.12...v0.5.13)
