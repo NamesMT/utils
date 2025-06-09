@@ -28,15 +28,15 @@ export function escapeRegex(str: string) {
   return str.replace(/[/\-\\^$*+?.()|[\]{}]/g, '\\$&')
 }
 
-export type VariablePrefixed<I extends string | any[] | Record<string, any>, P extends string = '', S extends string = ''> =
+export type VariablePrefixed<I extends string | ReadonlyArray<any> | Record<string, any>, P extends string = '', S extends string = ''> =
 I extends string
   ? `${P}${I}${S}`
-  : I extends any[]
-    ? { [E in keyof I]: VariablePrefixed<I[E] extends string | any[] | Record<string, any> ? I[E] : never, P, S> }
+  : I extends ReadonlyArray<any>
+    ? { [E in keyof I]: VariablePrefixed<I[E] extends string | ReadonlyArray<any> | Record<string, any> ? I[E] : never, P, S> }
     : I extends Record<string, any>
       ? { [K in keyof I as `${P}${K & string}${S}`]: I[K] }
       : never
-export function variablePrefix<I extends string | any[] | Record<string, any>, P extends string = '', S extends string = ''>(
+export function variablePrefix<I extends string | ReadonlyArray<any> | Record<string, any>, P extends string = '', S extends string = ''>(
   variable: I,
   prefix?: P,
   suffix?: S,
@@ -48,12 +48,13 @@ export function variablePrefix<I extends string | any[] | Record<string, any>, P
     return `${prefix}${variable}${suffix}` as VariablePrefixed<I, P, S>
   }
   else if (Array.isArray(variable)) {
-    return variable.map(v => variablePrefix(v, prefix, suffix)) as VariablePrefixed<I, P, S>
+    return variable.map(v => variablePrefix(v, prefix, suffix)) as any as VariablePrefixed<I, P, S>
   }
   else if (typeof variable === 'object' && variable !== null) {
+    const _var = variable as Record<string, any>
     const result: Record<string, any> = {}
-    Object.keys(variable).forEach((key) => {
-      result[`${prefix}${key}${suffix}`] = variable[key]
+    Object.keys(_var as Record<string, any>).forEach((key) => {
+      result[`${prefix}${key}${suffix}`] = _var[key]
     })
     return result as VariablePrefixed<I, P, S>
   }
