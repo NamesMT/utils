@@ -28,8 +28,8 @@ export function escapeRegex(str: string) {
   return str.replace(/[/\-\\^$*+?.()|[\]{}]/g, '\\$&')
 }
 
-export type VariablePrefixed<I extends string | ReadonlyArray<any> | Record<string, any>, P extends string = '', S extends string = ''> =
-I extends string
+export type VariablePrefixed<I extends string | ReadonlyArray<any> | Record<string, any>, P extends string = '', S extends string = ''>
+= I extends string
   ? `${P}${I}${S}`
   : I extends ReadonlyArray<any>
     ? { [E in keyof I]: VariablePrefixed<I[E] extends string | ReadonlyArray<any> | Record<string, any> ? I[E] : never, P, S> }
