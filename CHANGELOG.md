@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.5.15
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.14...v0.5.15)
+
+### 🏡 Chore
+
+- Update deps ([251858d](https://github.com/namesmt/utils/commit/251858d))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.14
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.13...v0.5.14)

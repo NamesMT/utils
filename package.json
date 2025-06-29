@@ -1,7 +1,7 @@
 {
   "name": "@namesmt/utils",
   "type": "module",
-  "version": "0.5.14",
+  "version": "0.5.15",
   "packageManager": "pnpm@10.12.4",
   "description": "Opinionated collection of common JavaScript / TypeScript utils on top of @antfu's opinionated collection",
   "author": "NamesMT <dangquoctrung123@gmail.com>",
