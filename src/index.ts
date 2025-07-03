@@ -1,5 +1,6 @@
 export * from './array'
 export * from './base'
+export * from './browser'
 export * from './equal'
 export * from './object'
 export * from './promise'
