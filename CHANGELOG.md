@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.5.16
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.15...v0.5.16)
+
+### 🚀 Enhancements
+
+- Add `browserDownloadFile` ([d692281](https://github.com/namesmt/utils/commit/d692281))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.15
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.14...v0.5.15)
