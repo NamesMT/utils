@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.5.17
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.16...v0.5.17)
+
+### 🏡 Chore
+
+- ⚠️  Set `DetailedError`.name ([9e187ee](https://github.com/namesmt/utils/commit/9e187ee))
+- Update deps ([bdbe6a1](https://github.com/namesmt/utils/commit/bdbe6a1))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Set `DetailedError`.name ([9e187ee](https://github.com/namesmt/utils/commit/9e187ee))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.16
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.15...v0.5.16)
