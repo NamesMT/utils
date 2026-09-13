@@ -2,7 +2,9 @@ import { escapeRegex } from './base'
 
 /**
  * Do replaces on a string using a map (Record)
- * 
+ *
+ * @param str - The source string
+ * @param map - Map of find/replace pairs
  * @param recursive - If true, will retry all replacements until no more replacements are made
  */
 export function replaceByMap(str: string, map: Record<string, string>, recursive: boolean = false): string {
@@ -37,7 +39,10 @@ export function replaceByMap(str: string, map: Record<string, string>, recursive
 export const replaceMap = replaceByMap
 
 /**
- * 
+ * Do replaces on a string using an array of [find, replace] tuples
+ *
+ * @param str - The source string
+ * @param replaces - Array of [find, replace] tuples
  * @param recursive - If true, will retry all replacements until no more replacements are made
  */
 export function replaceByArray(str: string, replaces: ReadonlyArray<[string | RegExp, string]>, recursive: boolean = false): string {

@@ -1,16 +1,18 @@
 import type { Extends } from './types'
 
 /**
- * Returns a new array with element at indexes of old array
+ * Returns a new array with elements at the given indexes of the source array
  */
-export function arrayFromIndexes(arr: any[], idxs: number[]): any[] {
+export function arrayFromIndexes<T>(arr: T[], idxs: number[]): T[] {
   return idxs.map(idx => arr[idx])
 }
 
 /**
  * Remove items from array by indexes
- * 
- * @param {boolean} [clone] - If false, will modify the original array
+ *
+ * @param array - The source array
+ * @param indexes - Indexes of the items to remove
+ * @param clone - If false, will modify the original array
  */
 export function removeItemsByIndexes<T>(array: T[], indexes: number[], clone: boolean = true): T[] {
   // Maybe clone the original array
