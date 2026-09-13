@@ -2,7 +2,7 @@
   "name": "@namesmt/utils",
   "type": "module",
   "version": "0.5.18",
-  "packageManager": "pnpm@10.34.5",
+  "packageManager": "pnpm@12.4.1",
   "description": "Opinionated collection of common JavaScript / TypeScript utils on top of @antfu's opinionated collection",
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
@@ -62,15 +62,6 @@
     "typescript": "^5.9.3",
     "unbuild": "^3.6.1",
     "vitest": "^3.2.7"
-  },
-  "pnpm": {
-    "overrides": {
-      "is-core-module": "npm:@nolyfill/is-core-module@^1.0.39"
-    },
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "simple-git-hooks"
-    ]
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
