@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.5.19
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.18...v0.5.19)
+
+### 🩹 Fixes
+
+- Use relative paths (drop deprecated `baseUrl`) ([310928b](https://github.com/namesmt/utils/commit/310928b))
+
+### 💅 Refactors
+
+- Improve types and JSDoc accuracy ([bcb1be8](https://github.com/namesmt/utils/commit/bcb1be8))
+
+### 🏡 Chore
+
+- Migrate to pnpm 12 ([e326d04](https://github.com/namesmt/utils/commit/e326d04))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.18
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.17...v0.5.18)
