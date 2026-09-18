@@ -1,5 +1,5 @@
+import { arrayFromIndexes } from '#src/array.js'
 import { expect, it } from 'vitest'
-import { arrayFromIndexes } from '~/array'
 
 it('array/arrayFromIndexes', () => {
   const arr = ['a', 'b', 'c', 'd']
