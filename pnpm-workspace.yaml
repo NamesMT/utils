@@ -1,5 +1,6 @@
 packages:
   - playground
+ignoreWorkspaceRootCheck: true
 overrides:
   is-core-module: npm:@nolyfill/is-core-module@^1.0.39
 allowBuilds:
