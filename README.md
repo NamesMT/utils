@@ -42,10 +42,10 @@ import { createLogger, objectGet } from '@namesmt/utils'
 [npm-version-href]: https://npmjs.com/package/@namesmt/utils
 [npm-downloads-src]: https://img.shields.io/npm/dm/@namesmt/utils?labelColor=18181B&color=F0DB4F
 [npm-downloads-href]: https://npmjs.com/package/@namesmt/utils
-[codecov-src]: https://img.shields.io/codecov/c/gh/namesmt/@namesmt/utils/main?labelColor=18181B&color=F0DB4F
-[codecov-href]: https://codecov.io/gh/namesmt/@namesmt/utils
-[license-src]: https://img.shields.io/github/license/namesmt/@namesmt/utils.svg?labelColor=18181B&color=F0DB4F
-[license-href]: https://github.com/namesmt/@namesmt/utils/blob/main/LICENSE
+[codecov-src]: https://img.shields.io/codecov/c/gh/namesmt/utils/main?labelColor=18181B&color=F0DB4F
+[codecov-href]: https://codecov.io/gh/namesmt/utils
+[license-src]: https://img.shields.io/github/license/namesmt/utils.svg?labelColor=18181B&color=F0DB4F
+[license-href]: https://github.com/namesmt/utils/blob/main/LICENSE
 [bundlejs-src]: https://img.shields.io/bundlejs/size/@namesmt/utils?labelColor=18181B&color=F0DB4F
 [bundlejs-href]: https://bundlejs.com/?q=@namesmt/utils
 [jsDocs-src]: https://img.shields.io/badge/Check_out-jsDocs.io---?labelColor=18181B&color=F0DB4F
