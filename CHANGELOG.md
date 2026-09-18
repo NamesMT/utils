@@ -1,6 +1,34 @@
 # Changelog
 
 
+## v0.5.20
+
+[compare changes](https://github.com/namesmt/utils/compare/v0.5.19...v0.5.20)
+
+### 📖 Documentation
+
+- Fix README badge URLs ([1380a20](https://github.com/namesmt/utils/commit/1380a20))
+
+### 📦 Build
+
+- ⚠️  Migrate to tsdown with native import maps ([0f0a8c5](https://github.com/namesmt/utils/commit/0f0a8c5))
+
+### 🏡 Chore
+
+- Move ignoreWorkspaceRootCheck into pnpm-workspace.yaml ([159c6b4](https://github.com/namesmt/utils/commit/159c6b4))
+
+### 🤖 CI
+
+- Add CI workflow ([f03b3b2](https://github.com/namesmt/utils/commit/f03b3b2))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Migrate to tsdown with native import maps ([0f0a8c5](https://github.com/namesmt/utils/commit/0f0a8c5))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.19
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.18...v0.5.19)
