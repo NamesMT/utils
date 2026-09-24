@@ -33,6 +33,24 @@ import { createLogger, objectGet } from '@namesmt/utils'
 ## Roadmap
 - [ ] Become the legendary 10000x developer
 
+## Releasing
+
+Releases are version-first and manual. Dispatch **Actions → Release → Run workflow** with the
+version to ship (no leading `v`, e.g. `0.6.0`); the `dry-run` input stops before anything is
+pushed or published.
+
+The workflow checks the version is greater than the current one, runs `pnpm run check` (lint,
+types and tests with coverage), builds, lets changelogen write `CHANGELOG.md`, bump `package.json`
+and tag `v<version>`, pushes the commit and tag, creates the GitHub release from the changelog
+section, then publishes to npm with OIDC trusted publishing. **A pushed tag on its own publishes
+nothing** — the workflow is dispatch-only on purpose. `pnpm run release:preview` prints the
+changelog the next release would get; `pnpm run release:check <version>` validates a version
+against `package.json` without touching anything.
+
+One-time setup before the first run: publish the package by hand once (npm only lets you configure
+a trusted publisher for a package that already exists), then on npmjs.com → the package →
+Settings → Trusted Publisher add this repository with workflow filename `release.yml`.
+
 ## License [![License][license-src]][license-href]
 [MIT](./LICENSE) License © 2024 [NamesMT](https://github.com/NamesMT)
 
