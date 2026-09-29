@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v0.5.21
+
+[compare changes](https://github.com/NamesMT/utils/compare/v0.5.20...v0.5.21)
+
+### 🩹 Fixes
+
+- Exclude playground from tsconfig typecheck ([5b3d603](https://github.com/NamesMT/utils/commit/5b3d603))
+
+### 📖 Documentation
+
+- Add npm metadata and correct repository URL casing ([dce04bc](https://github.com/NamesMT/utils/commit/dce04bc))
+
+### 🏡 Chore
+
+- **devcontainer:** Migrate from Alpine (musl) to Arch (glibc) image ([41b30a0](https://github.com/NamesMT/utils/commit/41b30a0))
+- **devcontainer:** Bootstrap pnpm via corepack when missing ([93fd576](https://github.com/NamesMT/utils/commit/93fd576))
+
+### 🤖 CI
+
+- **release:** Dispatch releases by hand and add an AGENTS.md ([9c1a76b](https://github.com/NamesMT/utils/commit/9c1a76b))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.5.20
 
 [compare changes](https://github.com/namesmt/utils/compare/v0.5.19...v0.5.20)
