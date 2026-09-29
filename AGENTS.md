@@ -54,3 +54,5 @@ by design); `dry-run` still runs changelogen (commit + tag on the runner), stopp
   `dist/` and `coverage/` do not count.
 - `release:check` compares against the version in `package.json`; a malformed, equal or lower
   version exits 1.
+- `isDequalLite` comes from `dequal/lite`, which has no `Set`, `Map`, `ArrayBuffer`, `TypedArray` or
+  `DataView` support — use `isDequal` when those values are compared.

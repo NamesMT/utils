@@ -7,13 +7,26 @@
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/namesmt",
-  "homepage": "https://github.com/namesmt/utils#readme",
+  "homepage": "https://github.com/NamesMT/utils#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/namesmt/utils.git"
+    "url": "git+https://github.com/NamesMT/utils.git"
   },
-  "bugs": "https://github.com/namesmt/utils/issues",
-  "keywords": [],
+  "bugs": "https://github.com/NamesMT/utils/issues",
+  "keywords": [
+    "utils",
+    "utilities",
+    "typescript",
+    "javascript",
+    "esm",
+    "helpers",
+    "type-safe",
+    "promise",
+    "string",
+    "array",
+    "object",
+    "browser"
+  ],
   "sideEffects": false,
   "source": "./src/index.ts",
   "imports": {
