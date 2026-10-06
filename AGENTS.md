@@ -80,5 +80,6 @@ Docs: one idea per sentence; cut anything that would not change what a reader do
 
 ## User-facing docs
 
-`README.md` is the only one here (no `docs/`): concise first read, depth behind `<details>` spoilers,
-visuals for skimmers. **Docs ship with the change**, same commit.
+`README.md` is the only one here (no `docs/`) and is for a person, not an agent: keep the first read
+concise, put depth behind `<details>` spoilers, and add visuals where they help the point. **Docs
+ship with the change**, same commit.
