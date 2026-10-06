@@ -56,3 +56,29 @@ by design); `dry-run` still runs changelogen (commit + tag on the runner), stopp
   version exits 1.
 - `isDequalLite` comes from `dequal/lite`, which has no `Set`, `Map`, `ArrayBuffer`, `TypedArray` or
   `DataView` support — use `isDequal` when those values are compared.
+
+## How to work here
+
+- **Check who calls it before you change it**; say when impact is unclear instead of guessing. All of
+  this ships as public API, so a rename or changed default reaches every consumer.
+- Never overwrite or delete a large section you have not understood.
+- Do not invent requirements; surface what looks needed.
+- Report the risk, not only the change — correctness, security, operational, integration — and mark
+  what you could not verify.
+- **Fix the root cause, not the instance.** The same bug under another name (a copied helper, a rule
+  stated twice, a bypassed guard) means fix the class: one implementation, one guard. That is the
+  work, not a follow-up to ask for.
+- Verify before claiming, and say which direction you checked; a passing test pins nothing you did
+  not watch fail first.
+- If recall of this project is missing, read this file and `git log` before acting.
+
+## Conciseness (applies everywhere)
+
+Prune verbose, keep correctness — code, comments, docs. Code: a comment only for non-obvious *intent*.
+Docs: one idea per sentence; cut anything that would not change what a reader does. Delete history
+`git log` already holds — keep the rule, not the story. Never drop a caveat to save a line.
+
+## User-facing docs
+
+`README.md` is the only one here (no `docs/`): concise first read, depth behind `<details>` spoilers,
+visuals for skimmers. **Docs ship with the change**, same commit.
