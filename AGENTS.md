@@ -68,7 +68,8 @@ pnpm run start                # run src/index.ts under tsx (`watch` / `dev` = ts
 
 ## Conciseness
 
-Prune verbose, keep correctness — code, comments, docs. Code: a comment only for non-obvious *intent*.
+Prune verbose, keep correctness — code, comments, docs. Code: a comment only for non-obvious *intent*,
+and short — a block arguing for its own change is a commit message, not a comment.
 Docs: one idea per sentence; cut anything that would not change what a reader does. Delete history
 `git log` already holds — keep the rule, not the story. Never drop a caveat to save a line.
 
